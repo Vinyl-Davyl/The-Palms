@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+/*Global styles*/
+
+body {
+  padding: 3em;
+  background-image: url('./images/hero.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+a:link{
+  text-decoration: underline;
+}
+
+.wrap{
+  padding: 3em;
+  border-radius:0.4em;
+  background-color: rgba(58,116,133, 0.8);
+  color: white;
+}
+.wrap p, .wrap h1{
+    text-align: left;
+    padding-bottom: 0.75em;
+}
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1, h2, h3{
+  font-family: 'Montserrat Alternates', Sans-Serif;
+  font-size: 1.5rem;
+    color: #c59d5f;
+    font-weight: 450 !important;
+    line-height: 1;
+    letter-spacing: 2px;
+   text-transform: uppercase ;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  background-color:transparent;
+  color: #337ab7;
+  padding: 0.75em;
+  text-align: center;
+  border-radius: 0.4em;
+  text-transform: none;
+}
+.first-letter{
+  text-transform: uppercase;
+  font-size: 10.3rem;
+}
+
+	
+p {
+  margin-top: 1.5em;
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/*--------------------------------
+Menu Page
+-----------------------------------*/
+
+.menu-section {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    padding-top:25px;
+  }
+  
+  .menu-list {
+    float: left;
+    width: 49%;
+    margin-right: 10px;
+    padding-bottom:25px;
+  }
+
+  .menu-list .menu-list__title{
+    font-family: 'Montserrat Alternates', Sans-Serif;
+    
+  }
+  
+  .page-template-menu-template .interior-cta-background {
+    display: inline-block;
+    width: 100%;
+    background: none;
+    text-align: center;
+    margin-top: -114px;
+    padding: 150px 30px;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .page-template-menu-template .site-header li a {
+    color: #fff;
+  }
+  
+  .menu-list hr {
+    margin: 36px 0
+  }
+  
+  .menu-list span.dots {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0;
+    border: 0;
+    height: 3px;
+    display: block;
+    background-image: radial-gradient(circle closest-side, #b3b3b3 99%, transparent 1%);
+    background-position: bottom;
+    background-size: 6px 3px;
+    background-repeat: repeat-x
+  }
+  
+  .menu-list__title {
+    text-align: left;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1.85px;
+    font-weight: 600;
+  }
+  
+  .menu-list__item {
+    position: relative;
+    margin-bottom: 30px;
+    list-style: none;
+  }
+  
+  .menu-list__item:last-child {
+    margin-bottom: 0
+  }
+  
+  .menu-list__item-title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-right: 96px;
+    text-align: left;
+    letter-spacing: 1.25px;
+  }
+  
+  .menu-list__item-title .item_title {
+    position: relative;
+    z-index: 5;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #c59d5f;
+    font-family: 'Montserrat Alternates', Sans-Serif;
+    font-weight: 100;
+  }
+
+  .container .menu-list{
+  background-color:transparent;
+
+  }
+  
+  p.menu-list__item-desc {
+    position: relative;
+    margin-bottom: 0;
+    text-align: left
+  }
+  
+  p.menu-list__item-desc+span.dots {
+    display: none
+  }
+  
+  .desc__content {
+    position: relative;
+    z-index: 5;
+    background-color: transparent;
+  }
+  
+  .menu-list__item-price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    max-width: 96px;
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.27316;
+    font-weight: 100;
+    /* font-size: 15px; */
+  }
+  
+  .menu-list__item-price p {
+    color: #e3b379;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', Arial;
+  }
+  
+  .menu-list__item-highlight-title {
+    position: absolute;
+    top: -38px;
+    left: -18px;
+    padding: 0 18px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+    color: white;
+    background-color: #c59d5f
+  }
+  
+  .menu-list__item-highlight-wrapper {
+    margin-top: 54px;
+    margin-bottom: 38px
+  }
+  
+  .menu-list__item-highlight-wrapper:before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    right: -18px;
+    bottom: -18px;
+    border: 2px solid #c59d5f
+  }
+  
+  /*Back to home button*/
+.back {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 10px 10px 40px;
+}
+
+
+.back div {
+  top: 20px;
+  left: 0;
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid  #64889e;
+  transform: scale(1);
+  background-color: #E9E7F2;
+  transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1.6);
+}
+
+.back div::after {
+  top: 0;
+  left: 0;
+  content: '';
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  background-position: 0 0;
+  background-image: url('https://s3-eu-west-1.amazonaws.com/thomascullen-codepen/back.svg');
+  transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.back:hover h4 {
+  color: #171922;
+}
+
+.back:hover h4,
+.back:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back:hover div {
+  transform: scale(1.1);
+  background-color: white;
+  box-shadow:
+    0 2px 10px 0 rgba(185,182,198,0.00),
+    0 1px 3px 0 rgba(175,172,189,0.25);
+}
+
+.back:hover div::after {
+  transform: translateX(-30px);
+}
+/*Back to home button ends*/
+
+
+  @media(max-width:1024px) {
+    body{
+      background-size: cover;
+    }
+    .menu-list {
+      display:block;
+      margin:0 auto;
+      float: none;
+      width: 100%;
+      max-width:95%;
+    }
+    h3{
+      display: none;
+    }
+  }
+
+  @media(max-width: 376px){
+    .menu-list__item-title .item_title {
+      position: relative;
+      z-index: 5;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    h3{
+      display: none;
+    }
+  }
+
+  @media(max-width: 320px){
+    .menu-list__item-title .item_title {
+      position: relative;
+      z-index: 5;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #c59d5f 
+    }
+    .menu-list__title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .menu-list span.dots{
+      display: none;
+    }
+    
+    .menu-list__item-price p{
+      display: none;
+    }
+    
+    h3{
+      display: none;
+    }
+  }
+
+  

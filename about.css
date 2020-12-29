@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+/*Global styles*/
+
+body {
+  padding: 3em;
+  background-image: url('./images/hero.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a:link{
+  text-decoration: underline;
+}
+header {
+  text-align: center;
+  padding-bottom: 0.75em;
+}
+
+header p {
+  text-align: center;
+}
+.wrap{
+  padding: 3em;
+  border-radius:0.4em;
+  background-color: rgba(58,116,133, 0.8);
+  color: white;
+}
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+h1, h2, h3{
+  font-family: 'Montserrat Alternates', Sans-Serif;
+  font-size: 1.5rem;
+    color: #c59d5f;
+    font-weight: 450 !important;
+    line-height: 1;
+    letter-spacing: 2px;
+   text-transform: uppercase ;
+
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  background-color: rgba(255,255,255,0.6);
+  color: #337ab7;
+  padding: 0.75em;
+  text-align: center;
+  border-radius: 0.4em;
+  text-transform: none;
+}
+.first-letter{
+  text-transform: uppercase;
+  font-size: 10.3rem;
+}
+.img-responsive{
+  border-radius: 50px;
+  width: 50%;
+  margin: auto;
+  display: block;
+	width:550px;
+	height: 450px;
+	
+}
+p {
+  margin-top: 1.5em;
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/*Team section*/
+/**
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Exo', sans-serif;
+}*/
+
+.team-section
+{
+  background-color: rgba(58,116,133, 0.8);
+  text-align: center;
+  padding: 3em;
+  border-radius:0.4em;
+  color: white;
+}
+
+.inner-width
+{
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px;
+	color: white;
+	overflow: hidden;
+}
+
+.team-section h1
+{
+	font-size: 20px;
+	text-transform: uppercase;
+	display: inline-block;
+	border-bottom: 4px solid;
+	padding-bottom: 10px;
+}
+
+.pe
+{
+	float: left;
+	width: calc(100% / 3);
+	overflow: hidden;
+	padding: 40px 0;
+	transition: 0.4s;
+}
+
+.pe:hover
+{
+  background-color: rgba(61, 44, 73, 0.8);
+}
+
+.pe img
+{
+  margin: auto;
+	width:250px;
+	height: 250px;
+	border-radius: 50%;
+}
+
+.p-name
+{
+	margin: 5px;
+	text-transform: uppercase;
+}
+
+.p-des
+{
+	font-style: italic;
+	color: #3498db;
+}
+
+.p-sm
+{
+	margin-top: 6px;
+}
+
+.p-sm a
+{
+	margin: 0 4px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	transition: 0.4s;
+}
+
+.p-sm a:hover
+{
+	transform: scale(1.3);
+}
+
+.p-sm a i
+{
+	color: white;
+	line-height: 30px;
+}
+
+/*Back to home button*/
+.back {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 10px 10px 40px;
+}
+
+
+.back div {
+  top: 20px;
+  left: 0;
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid  #64889e;
+  transform: scale(1);
+  background-color: #E9E7F2;
+  transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1.6);
+}
+
+.back div::after {
+  top: 0;
+  left: 0;
+  content: '';
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  background-position: 0 0;
+  background-image: url('https://s3-eu-west-1.amazonaws.com/thomascullen-codepen/back.svg');
+  transition: transform 400ms 0s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.back:hover h4 {
+  color: #171922;
+}
+
+.back:hover h4,
+.back:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back:hover div {
+  transform: scale(1.1);
+  background-color: white;
+  box-shadow:
+    0 2px 10px 0 rgba(185,182,198,0.00),
+    0 1px 3px 0 rgba(175,172,189,0.25);
+}
+
+.back:hover div::after {
+  transform: translateX(-30px);
+}
+/*Back to home button ends*/
+
+
+@media screen and (max-width: 960px) {
+	.pe{
+    width: 45%;
+    padding: 0;
+    margin: 0;
+  }
+  .pe img
+{
+  overflow: hidden;
+  margin: auto;
+	width:100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.img-responsive{
+  overflow: hidden;
+  border-radius: 20px;
+  margin: auto;
+  display: block;
+	width:250px;
+	height: 150px;
+ }
+}
+
+@media screen and (max-width: 375px) {
+	.pe{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .pe img
+  {
+    overflow: hidden;
+    margin: auto;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .team-section{
+    padding: 0;
+    width: 8.5rem;
+  }
+  .img-responsive{
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+    width:250px;
+    height: 150px;
+  }
+  .inner-width{
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+	.pe{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .pe img
+  {
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .img-responsive{
+    border-radius: 20px;
+    margin: auto;
+    display: none;
+    width:250px;
+    height: 150px;
+    
+  }
+  .inner-width{
+    padding: 0;
+  }
+
+  h1,h2,h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h3{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .inner-width{
+    display: none;
+  }
+}
+
